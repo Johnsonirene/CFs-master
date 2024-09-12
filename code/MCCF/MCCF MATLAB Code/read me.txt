@@ -1,0 +1,36 @@
+This code trains/tests Multi-Channel Correlation Filters for Eye detection in face images, including:
+
+
+MCCF_training.m
+	To train a MCCF correlation filter for the right eye detection in face images. 
+
+MCCF_testing.m
+	To test the trained MCCF filter on the multi-pie face dataset. 
+
+------------------------------------------------------------
+helper functions:
+------------------------------------------------------------
+calc_hog.m
+	To calculate dense HoG feature channels.
+
+gaussian_filter.m
+	To generate the target correlation response (Gaussian-like function) for filter learning. 
+
+get_cosine_window.m
+	To produce cosine window to reduce the high frequencies of image borders. 
+
+powerNormalise.m
+	To perform image power normalization as preprocessing.
+
+
+------------------------------------------------------------
+detection speed: ~85 face images/sec
+------------------------------------------------------------
+
+------------------------------------------------------------
+paper:
+------------------------------------------------------------
+H. Kiani, T. Sim and S. Lucey, "Multi-Channel Correlation Filters", ICCV, 2013.
+
+
+
